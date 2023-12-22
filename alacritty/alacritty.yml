@@ -1,0 +1,49 @@
+env:
+  term: alacritty
+
+window:
+  class:
+    instance: Alacritty
+    general: Alacritty
+  padding:
+    x: 8
+    y: 8
+  opacity: 0.8
+  dynamic_title: true
+
+scrolling:
+  history: 5000
+  multiplier: 5
+
+font:
+  normal:
+    family: Source Code Pro
+  size: 10
+
+draw_bold_text_with_bright_colours: false
+
+colors:
+  primary: 
+    background: '#061619'
+    foreground: '#e4dfda'
+  normal:
+    black:    '#061619'
+    white:    '#e4dfda'  
+    red:      '#d04b44'
+    green:    '#92e7b9'
+    blue:     '#2590c5'
+    yellow:   '#e9ac28'
+    magenta:  '#fb94a7'
+    cyan:     '#92e3eb'
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Block
+    blinking: On
+    blink-interval: 400
+
+shell:
+  program: /bin/zsh
