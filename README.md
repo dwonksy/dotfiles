@@ -3,9 +3,13 @@ Dotfiles for personal Arch Linux configuration.
 
 ---
 
-Laptop: MSI GF63 11UC Thin
-Compositor: picom
-Window Manager: i3
-Bar: polybar
-Launcher: rofi
-Terminal: Alacritty
+Info:
+- Laptop: MSI GF63 11UC Thin
+- OS: Arch Linux
+- Compositor: picom
+- Window Manager: i3-wm
+- Bar: polybar
+- Launcher: rofi
+- Terminal: Alacritty
+- Font: Source Code Pro
+- Wallpaper: 阴影里的蜘蛛 by Sleeptight ([pixiv](https://www.pixiv.net/en/users/12541036))
