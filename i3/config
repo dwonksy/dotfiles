@@ -16,28 +16,31 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 ### PRETTY ###
 font pango:Source Code Pro Bold 11
+
 title_align center
 gaps inner 6px
 gaps outer 2px
 
-# Colors for reference
-# set $black	= #061619
-# set $greyd	= #253435
-# set $greyl	= #737a78
-# set $white	= #e4dfda
-# set $red	= #d04b44
-# set $yellow	= #e9ac28
+# Colors
+set_from_resource $black  color0
+set_from_resource $greyd  color8
+set_from_resource $greyl  color7
+set_from_resource $white  color15
+set_from_resource $red	  color1
+set_from_resource $yellow color4
 
 # class			t-bdr	t-bg	text	indic	bdr
-client.focused		#d04b44 #d04b44 #e4dfda #061619 #d04b44
-client.focused_inactive	#253435 #253435 #737a78 #061619 #253435
-client.unfocused	#061619 #061619 #737a78 #061619 #061619
-client.urgent		#e9ac28 #e9ac28 #061619 #061619 #e9ac28
-client.placeholder	#061619 #061619 #737a78 #061619 #061619
-client.background	#061619
+client.focused		$red	$red	$white	$black	$red
+client.focused_inactive	$greyd	$greyd	$greyl	$black	$greyd
+client.unfocused	$black	$black	$greyl	$black	$black
+client.urgent		$yellow	$yellow	$black	$black	$yellow
+client.placeholder	$black	$black	$greyl	$black	$black
+client.background	$black
 
 # Border
-default_border pixel 2
+default_border normal
+for_window [class="Alacritty"] border pixel 2
+default_floating_border normal
 
 
 ### ADDITIONAL KEYBINDINGS ###

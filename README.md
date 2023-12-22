@@ -11,5 +11,6 @@ Info:
 - Bar: polybar
 - Launcher: rofi
 - Terminal: Alacritty
+- Shell: zsh
 - Font: Source Code Pro
 - Wallpaper: 阴影里的蜘蛛 by Sleeptight ([pixiv](https://www.pixiv.net/en/users/12541036))
