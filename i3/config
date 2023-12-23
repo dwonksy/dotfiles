@@ -9,12 +9,12 @@ set $mod Mod4
 
 exec --no-startup-id picom -b --config $HOME/.config/picom/picom.conf
 exec --no-startup-id sudo feh --bg-scale $HOME/.config/wallpapers/desktopbg.jpg
-# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
 
 ### PRETTY ###
-font pango:Source Code Pro Bold 11
+font pango:Source Code Pro Bold 12
 
 title_align center
 gaps inner 6px
@@ -53,7 +53,8 @@ default_floating_border normal
 bindsym $mod+Return exec alacritty
 
 # App lanucher (rofi)
-bindsym $mod+d exec "rofi -modi drun,run -show drun"
+bindsym $mod+d exec "rofi -show drun"
+bindsym $mod+Shift+d exec "rofi -show filebrowser"
 
 # Turn on and off cooler boost for MSI laptop.
 bindsym $mod+b exec --no-startup-id sudo isw -b on && $refresh_i3status
