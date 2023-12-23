@@ -1,3 +1,30 @@
 configuration {
+	modes: "drun,filebrowser";
 
+	font: "Source Code Pro 12";
+
+	location: 6;	/* Appear from bottom */
+	yoffset: 2;	/* Hides rounded corners */
+	xoffset: -450;
+
+	fixed-num-lines: true;
+	scroll-method: 1;	/* Continuous scrolling */
+
+	show-icons: true;
+	icon-theme: "hicolor";
+	drun-display-format: "{name}";
+
+	timeout {
+		action: "kb-cancel";
+		delay:  0;
+	}
+
+	filebrowser {
+		directories-first: true;
+		sorting-method: "name";
+	}
+
+	icon {
+		theme: "hicolor";
+	}
 }
