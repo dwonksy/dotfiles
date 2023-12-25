@@ -20,23 +20,19 @@ title_align center
 gaps inner 6px
 gaps outer 2px
 
-# Colors
+# Colors (main = red, alert = yellow)
 set_from_resource $black	color0
 set_from_resource $greyd	color8
 set_from_resource $greyl	color7
 set_from_resource $white	color15
-set_from_resource $red		color1
-set_from_resource $green	color2
-set_from_resource $yellow	color3
-set_from_resource $blue		color4
-set_from_resource $magenta	color5
-set_from_resource $cyan		color6
+set_from_resource $main		color1
+set_from_resource $alert	color3
 
 # class			t-bdr	t-bg	text	indic	bdr
-client.focused		$red	$red	$white	$black	$red
+client.focused		$main	$main	$white	$black	$main
 client.focused_inactive	$greyd	$greyd	$greyl	$black	$greyd
 client.unfocused	$black	$black	$greyl	$black	$black
-client.urgent		$yellow	$yellow	$black	$black	$yellow
+client.urgent		$alert	$alert	$black	$black	$alert
 client.placeholder	$black	$black	$greyl	$black	$black
 client.background	$black
 
