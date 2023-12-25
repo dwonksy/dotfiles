@@ -1,10 +1,10 @@
 configuration {
 	modes: "drun,filebrowser";
 
-	font: "Source Code Pro 12";
+	font: "Source Code Pro 14";
 
 	location: 6;	/* Appear from bottom */
-	yoffset: 2;	/* Hides rounded corners */
+	yoffset: 3;	/* Hides rounded corners */
 	xoffset: -450;
 
 	fixed-num-lines: true;
@@ -28,3 +28,5 @@ configuration {
 		theme: "hicolor";
 	}
 }
+
+@import "theme.rasi"
