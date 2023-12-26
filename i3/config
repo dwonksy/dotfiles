@@ -45,6 +45,10 @@ default_floating_border normal
 
 ### KEYBINDINGS ###
 
+# Launch Programs
+bindsym $mod+F1 exec chromium
+bindsym $mod+F2 exec krita
+
 # Start a terminal
 bindsym $mod+Return exec alacritty
 
