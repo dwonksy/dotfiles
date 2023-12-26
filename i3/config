@@ -37,7 +37,7 @@ client.placeholder	$black	$black	$greyl	$black	$black
 client.background	$black
 
 # Border
-default_border normal
+default_border none
 for_window [class="Alacritty"] border pixel 2
 default_floating_border normal
 
