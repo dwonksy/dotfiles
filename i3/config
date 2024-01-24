@@ -56,6 +56,9 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+d exec "rofi -show drun"
 bindsym $mod+Shift+d exec "rofi -show filebrowser"
 
+# File browser (dolphin)
+bindsym $mod+slash exec dolphin
+
 # Turn on and off cooler boost for MSI laptop.
 bindsym $mod+b exec --no-startup-id sudo isw -b on && $refresh_i3status
 bindsym $mod+Shift+b exec --no-startup-id sudo isw -b off && $refresh_i3status
