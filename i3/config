@@ -164,8 +164,8 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Assign workspaces
-assign [class="Chromium"] $ws2
-assign [class="krita"] $ws3
+assign [class="Chromium"] $ws1
+assign [class="krita"] $ws2
 for_window [class="huiontablet"] move scratchpad
 
 
