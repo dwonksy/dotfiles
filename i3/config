@@ -14,7 +14,7 @@ exec_always --no-startup-id /usr/lib/huiontablet/huiontablet.sh
 
 
 ### PRETTY ###
-font pango:Source Code Pro Bold 12
+font pango:monospace Bold 12
 
 title_align center
 gaps inner 6px
