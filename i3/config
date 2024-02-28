@@ -46,6 +46,7 @@ default_floating_border normal
 ### KEYBINDINGS ###
 
 # Launch Programs
+bindsym $mod+Escape exec bash -c "$HOME/.config/scripts/shortcuts.sh"
 bindsym $mod+F1 exec chromium
 bindsym $mod+F2 exec krita
 
@@ -53,8 +54,7 @@ bindsym $mod+F2 exec krita
 bindsym $mod+Return exec alacritty
 
 # App lanucher (rofi)
-bindsym $mod+d exec "rofi -show drun"
-bindsym $mod+Shift+d exec "rofi -show filebrowser"
+bindsym $mod+d exec "rofi -modi drun -show drun"
 
 # File browser (dolphin)
 bindsym $mod+slash exec dolphin

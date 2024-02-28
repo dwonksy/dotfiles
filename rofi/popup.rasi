@@ -1,0 +1,23 @@
+@import "config.rasi"
+
+window {
+	padding: 20px;
+	width: 25%;
+}
+
+mainbox {
+	children: [listview];
+}
+
+listview {
+	fixed-height: false;
+	scrollbar: false;
+}
+
+element {
+	padding: 10 15;
+}
+
+configuration {
+	show-icons: false;
+}
