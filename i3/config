@@ -77,10 +77,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
 
 ### MOVEMENT & WINDOW CONTROL ###
-set $up k
-set $down j
-set $left h
-set $right l
+set $up Up
+set $down Down
+set $left Left
+set $right Right
 
 # Focus follows mouse. Use modifier to move tiled and resize floating windows.
 focus_follows_mouse yes
@@ -94,37 +94,36 @@ bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 # Move focused window
-bindsym $mod+Left move left
-bindsym $mod+Down move down
-bindsym $mod+Up move up
-bindsym $mod+Right move right
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
 
 # Toggle split
 bindsym $mod+m split toggle
-
-# Kill focused window
-bindsym $mod+Shift+q kill
-
-# Enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
 bindsym $mod+q layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# Toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
 
 # Change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# Move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
 
 # Show/hide/cycle scratchpad window(s)
 bindsym $mod+minus scratchpad show
 
+# Move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Kill focused window
+bindsym $mod+Shift+q kill
 
 
 ### WORKSPACES ###
@@ -164,8 +163,6 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Assign workspaces
-assign [class="Chromium"] $ws1
-assign [class="krita"] $ws2
 for_window [class="huiontablet"] move scratchpad
 
 
