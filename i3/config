@@ -8,7 +8,7 @@
 set $mod Mod4
 
 exec --no-startup-id picom -b --config $HOME/.config/picom/picom.conf
-exec --no-startup-id sudo feh --bg-scale $HOME/.config/wallpapers/desktopbg.jpg
+exec --no-startup-id sudo feh --bg-scale $HOME/.config/themes/wallpapers/desktopbg.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id /usr/lib/huiontablet/huiontablet.sh
 

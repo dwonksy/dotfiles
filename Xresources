@@ -1,4 +1,4 @@
-#include ".config/colors/langleyred"
+#include ".config/themes/colors/langleyred"
 
 *.background:  BACKGROUND
 *.foreground:  FOREGROUND
