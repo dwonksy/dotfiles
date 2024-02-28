@@ -1,11 +1,7 @@
 configuration {
-	modes: "drun,filebrowser";
+	font: "Monospace 14";
 
-	font: "Source Code Pro 14";
-
-	location: 6;	/* Appear from bottom */
-	yoffset: 3;	/* Hides rounded corners */
-	xoffset: -450;
+	location: 0;
 
 	fixed-num-lines: true;
 	scroll-method: 1;	/* Continuous scrolling */

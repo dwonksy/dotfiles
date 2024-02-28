@@ -12,7 +12,7 @@
 	background:		#1113127f;
 	clear:			#00000000;
 	foreground:		@white;
-	selected-background:	@main;
+	selected-background:	#25343544;
 	selected-foreground:	@white;
 	border-color:		@main;
 	separatorcolor:		@main;
@@ -50,9 +50,11 @@ mainbox {
 
 inputbar {
 	children: [entry, num-filtered-rows, textbox-num-sep, num-rows];
+	padding: 10px;
 }
 
 entry {
+	placeholder: "";
 	placeholder-color: @greyl;
 }
 
@@ -61,6 +63,7 @@ num-filtered-rows, textbox-num-sep, num-rows {
 }
 
 listview {
+	border: 0px;
 	lines: 8;
 	fixed-height: true;
 }
@@ -70,7 +73,7 @@ scrollbar {
 }
 
 element {
-	padding: 5;
+	padding: 10;
 	spacing: 10;
 }
 
