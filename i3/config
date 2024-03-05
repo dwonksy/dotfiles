@@ -50,14 +50,14 @@ bindsym $mod+Escape exec bash -c "$HOME/.config/scripts/shortcuts.sh"
 bindsym $mod+F1 exec chromium
 bindsym $mod+F2 exec krita
 
-# Start a terminal
+# Start a terminal (alacritty)
 bindsym $mod+Return exec alacritty
-
-# App lanucher (rofi)
-bindsym $mod+d exec "rofi -modi drun -show drun"
 
 # File browser (dolphin)
 bindsym $mod+slash exec dolphin
+
+# App lanucher (rofi)
+bindsym $mod+d exec "rofi -modi drun -show drun"
 
 # Volume control
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
