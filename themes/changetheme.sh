@@ -31,6 +31,8 @@ setcolors () {
 	rm $FILE_TMP
 }
 
+cd "$HOME/.config/themes"
+
 cp "./colors/$PALETTE" "$HOME/.config/Xresources"
 
 for i in ${!TEMPLATES[@]}; do

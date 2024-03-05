@@ -9,7 +9,7 @@
 
 [colors]
 background = #7f_color0_
-background-alt = #aa_color0_
+background-alt = #aa_color8_
 foreground = _color15_
 primary = _color1_
 secondary = _color12_
