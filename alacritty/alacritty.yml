@@ -24,26 +24,26 @@ draw_bold_text_with_bright_colours: false
 
 colors:
   primary: 
-    background: '#111312'
-    foreground: '#e4dfda'
+    background: '#080909'
+    foreground: '#eee9e3'
   normal:
-    black:    '#111312'
-    red:      '#af3b3d'
-    green:    '#89cfac'
+    black:    '#080909'
+    red:      '#b73638'
+    green:    '#4dd49d'
     yellow:   '#e9b143'
-    blue:     '#317d89'
-    magenta:  '#df8390'
-    cyan:     '#86d1d4'
-    white:    '#b7b7b7'
+    blue:     '#527099'
+    magenta:  '#e57d9e'
+    cyan:     '#7bbece'
+    white:    '#a5a7a9'
   bright:
-    black:    '#253435'
-    red:      '#e18a86'
-    green:    '#b3eece'
-    yellow:   '#ffdb94'
-    blue:     '#90c2c1'
-    magenta:  '#fcb9c5'
-    cyan:     '#b8edf2' 
-    white:    '#e4dfda'
+    black:    '#212429'
+    red:      '#efb5b4'
+    green:    '#c8f1db'
+    yellow:   '#f6e0b2'
+    blue:     '#b3d3e9'
+    magenta:  '#f7cedb'
+    cyan:     '#d0eff2' 
+    white:    '#eee9e3'
 
 selection:
   save_to_clipboard: true

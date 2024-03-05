@@ -2,17 +2,17 @@
 
 * {
 	/* Colors (main = red, alert = yellow) */
-	black:	#111312;
-	greyd:	#253435;
-	greyl:	#b7b7b7;
-	white:	#e4dfda;
-	main:	#af3b3d;
-	alert:	#e9b143;
+	black:	#080909;
+	greyd:	#212429;
+	greyl:	#a5a7a9;
+	white:	#eee9e3;
+	main:	#b73638;
+	alert:	#f7cedb;
 
-	background:		#1113127f;
+	background:		#0809097f;
 	clear:			#00000000;
 	foreground:		@white;
-	selected-background:	#25343544;
+	selected-background:	#21242944;
 	selected-foreground:	@white;
 	border-color:		@main;
 	separatorcolor:		@main;
