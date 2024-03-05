@@ -1,0 +1,58 @@
+env:
+  term: alacritty
+
+window:
+  class:
+    instance: Alacritty
+    general: Alacritty
+  padding:
+    x: 8
+    y: 8
+  opacity: 0.8
+  dynamic_title: true
+
+scrolling:
+  history: 5000
+  multiplier: 5
+
+font:
+  normal:
+    family: monospace
+  size: 10
+
+draw_bold_text_with_bright_colours: false
+
+colors:
+  primary: 
+    background: '#_color0_'
+    foreground: '#_color15_'
+  normal:
+    black:    '#_color0_'
+    red:      '#_color1_'
+    green:    '#_color2_'
+    yellow:   '#_color3_'
+    blue:     '#_color4_'
+    magenta:  '#_color5_'
+    cyan:     '#_color6_'
+    white:    '#_color7_'
+  bright:
+    black:    '#_color8_'
+    red:      '#_color9_'
+    green:    '#_color10_'
+    yellow:   '#_color11_'
+    blue:     '#_color12_'
+    magenta:  '#_color13_'
+    cyan:     '#_color14_' 
+    white:    '#_color15_'
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Block
+    blinking: On
+    blink-interval: 400
+
+shell:
+  program: /bin/zsh

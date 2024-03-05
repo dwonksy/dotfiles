@@ -1,0 +1,86 @@
+@theme "default"
+
+* {
+	/* Colors (main = red, alert = yellow) */
+	black:	#_color0_;
+	greyd:	#_color8_;
+	greyl:	#_color7_;
+	white:	#_color15_;
+	main:	#_color1_;
+	alert:	#_color13_;
+
+	background:		#_color0_7f;
+	clear:			#00000000;
+	foreground:		@white;
+	selected-background:	#_color8_44;
+	selected-foreground:	@white;
+	border-color:		@main;
+	separatorcolor:		@main;
+
+	normal-background: @clear;
+	normal-foreground: @foreground;
+	active-background: @clear;
+	active-foreground: @foreground;
+	urgent-background: @alert;
+	urgent-foreground: @black;
+
+	selected-normal-background: @selected-background;
+	selected-normal-foreground: @selected-foreground;
+	selected-active-background: @selected-background;
+	selected-active-foreground: @selected-foreground;
+	selected-urgent-background: @urgent-background;
+	selected-urgent-foreground: @urgent-foreground;
+
+	alternate-normal-background: @normal-background;
+	alternate-normal-foreground: @normal-foreground;
+	alternate-active-background: @active-background;
+	alternate-active-foreground: @active-foreground;
+	alternate-urgent-background: @urgent-background;
+	alternate-urgent-foreground: @urgent-foreground;
+}
+
+window {
+	border: 3;
+	padding: 40;
+}
+
+mainbox {
+	children: [inputbar, listview];
+}
+
+inputbar {
+	children: [entry, num-filtered-rows, textbox-num-sep, num-rows];
+	padding: 10px;
+}
+
+entry {
+	placeholder: "";
+	placeholder-color: @greyl;
+}
+
+num-filtered-rows, textbox-num-sep, num-rows {
+	text-color: @greyl;
+}
+
+listview {
+	border: 0px;
+	lines: 8;
+	fixed-height: true;
+}
+
+scrollbar {
+	handle-color: @main;
+}
+
+element {
+	padding: 10;
+	spacing: 10;
+}
+
+element-icon {
+	size: 1.2em;
+}
+
+element-text {
+	vertical-align: 0.5;
+}

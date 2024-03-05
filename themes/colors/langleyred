@@ -1,20 +1,36 @@
-#define BACKGROUND #111312 
-#define FOREGROUND #e4dfda
+! special
+*.foreground:   #eee9e3
+*.background:   #050505
+*.cursorColor:  #eee9e3
 
-#define COLOR0  #111312 
-#define COLOR1  #af3b3d
-#define COLOR2  #89cfac
-#define COLOR3  #e9b143
-#define COLOR4  #317d89
-#define COLOR5  #df8390
-#define COLOR6  #86d1d4
-#define COLOR7  #b7b7b7
+! black
+*.color0:       #080909
+*.color8:       #212429
 
-#define COLOR8  #253435
-#define COLOR9  #e18a86
-#define COLOR10 #b3eece
-#define COLOR11 #ffdb94
-#define COLOR12 #90c2c1
-#define COLOR13 #fcb9c5
-#define COLOR14 #b8edf2
-#define COLOR15 #e4dfda
+! red
+*.color1:       #b73638
+*.color9:       #efb5b4
+
+! green
+*.color2:       #4dd49d
+*.color10:      #c8f1db
+
+! yellow
+*.color3:       #e9b143
+*.color11:      #f6e0b2
+
+! blue
+*.color4:       #527099
+*.color12:      #b3d3e9
+
+! magenta
+*.color5:       #e57d9e
+*.color13:      #f7cedb
+
+! cyan
+*.color6:       #7bbece
+*.color14:      #d0eff2
+
+! white
+*.color7:       #a5a7a9
+*.color15:      #eee9e3

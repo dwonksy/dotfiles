@@ -1,0 +1,211 @@
+;==========================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = #7f_color0_
+background-alt = #aa_color0_
+foreground = _color15_
+primary = _color1_
+secondary = _color12_
+alert = _color3_
+disabled = _color7_
+
+
+
+[bar/bar]
+enable-ipc = true
+
+width = 100%
+height = 24pt
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 3pt
+line-color = ${colors.primary}
+padding = 2
+font-0 = "Source Code Pro:size=12:weight=bold;2"
+font-1 = "Font Awesome 6 Free:size=12:style=solid;2"
+font-2 = "Font Awesome 6 Brands:size=12:style=solid;2"
+dpi = 96
+
+; modules
+modules-left = power date battery volume brightness
+modules-center = shortcuts xworkspaces
+modules-right = tmp cpu ram fs wlan  tray
+module-margin = 1
+; separator = |
+; separator-foreground = ${colors.primary}
+
+; cursors
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+
+[module/power]
+type = custom/text
+label = 
+label-foreground = ${colors.secondary}
+click-left = "$HOME/.config/scripts/powermenu.sh"
+
+
+[module/date]
+type = internal/date
+interval = 1
+format =  <label> 
+format-foreground = ${colors.foreground}
+format-background = ${colors.primary}
+format-padding = 2
+date = %H:%M:%S
+date-alt = %Y-%m-%d
+label = %date%
+
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ADP1
+full-at = 100
+low-at = 15
+format-charging = <animation-charging> <label-charging>
+animation-charging-foreground = ${colors.secondary}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+format-discharging = <ramp-capacity> <label-discharging>
+ramp-capacity-foreground = ${colors.secondary}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+
+[module/volume]
+type = internal/pulseaudio
+use-ui-max = false
+interval = 5
+format-volume = <ramp-volume> <label-volume>
+ramp-volume-foreground = ${colors.secondary}
+ramp-volume-0 = 
+ramp-volume-0-weight = 1
+ramp-volume-1 =  
+ramp-volume-1-weight = 79
+ramp-volume-2 = 
+ramp-volume-2-weight = 19
+ramp-volume-3 = 
+ramp-volume-3-weight = 1
+ramp-volume-3-foreground = ${colors.alert}
+label-muted = 
+label-muted-foreground = ${colors.disabled}
+
+
+[module/brightness]
+type = internal/backlight
+format = <ramp> <label>
+ramp-foreground = ${colors.secondary}
+ramp-0 = 
+ramp-1 = 
+
+
+
+[module/shortcuts]
+type = custom/text
+label = 
+label-foreground = ${colors.foreground}
+click-left = "$HOME/.config/scripts/shortcuts.sh"
+
+
+[module/xworkspaces]
+type = internal/xworkspaces
+label-active = %name%
+label-active-background = ${colors.background-alt}
+label-active-underline= ${colors.primary}
+label-active-padding = 2
+label-occupied = %name%
+label-occupied-padding = 1
+label-urgent = %name%
+label-urgent-foreground = ${colors.black}
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+label-empty = %name%
+label-empty-foreground = ${colors.disabled}
+label-empty-padding = 1
+
+
+
+[module/tmp]
+type = internal/temperature
+interval = 2
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+base-temperature = 60
+warn-temperature = 80
+ramp-foreground = ${colors.secondary}
+ramp-0 = 
+ramp-1 =  
+ramp-2 = 
+ramp-2-foreground = ${colors.alert}
+ramp-3 = 
+ramp-3-foreground = ${colors.primary}
+label = %temperature-c%
+label-warn = %temperature-c%
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-warn = <label-warn>
+warn-percentage = 80
+label =      %{F#_color12_}%{F-} %percentage%%
+label-warn = %{F#_color3_}%{F-} %percentage%
+
+
+[module/ram]
+type = internal/memory
+interval = 2
+format-warn = <label-warn>
+warn-percentage = 80
+label =      %{F#_color12_}%{F-} %percentage_used%%
+label-warn = %{F#_color3_}%{F-} %percentage_used%%
+
+
+[module/fs]
+type = internal/fs
+interval = 30.0
+mount-0 = /
+label-mounted = %{F#_color12_}%{F-} %percentage_used%%
+label-unmounted = %{F#_color15_} %{F-}
+
+
+[network-base]
+type = internal/network
+interval = 3.0
+label-connected = %{F#_color12_}%{F-} %netspeed%
+label-disconnected = %{F#_color15_}%{F-}
+
+[module/wlan]
+inherit = network-base
+interface-type = wireless
+
+[module/eth]
+inherit = network-base
+interface-type = wired
+
+
+[module/tray]
+type = internal/tray
+tray-spacing = 8pt
+
+
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = false
