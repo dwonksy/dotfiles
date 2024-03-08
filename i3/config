@@ -69,6 +69,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
+# Screenshots
+bindsym $mod+Print exec scrot ~/Pictures/Screenshots/%Y%m%d%H%M%S.png
+bindsym $mod+Shift+Print exec scrot --focused ~/Pictures/Screenshots/%Y%m%d%H%M%S.png
+
 
 
 ### MOVEMENT & WINDOW CONTROL ###
