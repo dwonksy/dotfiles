@@ -49,6 +49,7 @@ default_floating_border normal
 bindsym $mod+Escape exec bash -c "$HOME/.config/scripts/shortcuts.sh"
 bindsym $mod+F1 exec chromium
 bindsym $mod+F2 exec krita
+bindsym $mod+F3 exec blender
 
 # Start a terminal (alacritty)
 bindsym $mod+Return exec alacritty
