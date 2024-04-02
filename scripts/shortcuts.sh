@@ -12,7 +12,7 @@ EOF
 select=$(printf "${MESSAGE}" | rofi -dmenu -theme-str '@import "popup.rasi"')
 
 case $select in
-	" Browser") 		exec chromium ;;
+	" Browser") 		exec librewolf ;;
 	" File Manager")	exec dolphin ;;
 	" Mail") 		exec thunderbird ;;
 	" Office") 		exec libreoffice ;;
