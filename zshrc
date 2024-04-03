@@ -1,1 +1,3 @@
-# Created by newuser for 5.9
+alias rorph='pacman -Qdtq | sudo pacman -Rns -'
+alias corph='pacman -Qqd | pacman -Rsu --print -'
+alias rcorph='pacman -Qqd | sudo pacman -Rsu -'
