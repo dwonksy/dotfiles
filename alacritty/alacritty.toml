@@ -1,0 +1,54 @@
+[colors.bright]
+black = "#212429"
+blue = "#b3d3e9"
+cyan = "#d0eff2"
+green = "#c8f1db"
+magenta = "#f7cedb"
+red = "#efb5b4"
+white = "#eee9e3"
+yellow = "#f6e0b2"
+
+[colors.normal]
+black = "#080909"
+blue = "#527099"
+cyan = "#7bbece"
+green = "#4dd49d"
+magenta = "#e57d9e"
+red = "#b73638"
+white = "#a5a7a9"
+yellow = "#e9b143"
+
+[colors.primary]
+background = "#080909"
+foreground = "#eee9e3"
+
+[env]
+term = "alacritty"
+
+[font]
+size = 10
+
+[font.normal]
+family = "monospace"
+
+[scrolling]
+history = 5000
+multiplier = 5
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+dynamic_title = true
+opacity = 0.8
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 8
+y = 8
