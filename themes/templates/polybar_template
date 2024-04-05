@@ -189,7 +189,7 @@ label-unmounted = %{F#_color15_} %{F-}
 type = internal/network
 interval = 3.0
 label-connected = %{F#_color12_}%{F-} %netspeed%
-label-disconnected = %{F#_color15_}%{F-}
+label-disconnected = %{F#_color12_}%{F-} %{F#_color15_}%{F-}
 
 [module/wlan]
 inherit = network-base
